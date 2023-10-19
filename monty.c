@@ -81,6 +81,10 @@ void executor_instructs(char *opcode, stack_t **stack,
 		subi_elemt(stack, line_number);
 	else if (strcmp(opcode, "div") == 0)
 		divi_elemt(stack, line_number);
+	else if (strcmp(opcode, "pchar") == 0)
+		pchari_elemt(stack, line_number);
+	else if (strcmp(opcode, "pstr") == 0)
+		pstri_elemt(stack, line_number);
 	else
 	{
 		fprintf(stderr, "L%d: unknown instruction %s\n", line_number, opcode);
