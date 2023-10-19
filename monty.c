@@ -32,8 +32,8 @@ int main(int argc, char **argv)
 	while (getline(&line, &length, file) != -1)
 	{
 		line_number++;
-		opcode = strtok(line, " \t\n");
 		str_trim(line);
+		opcode = strtok(line, " \t\n");
 
 		if (opcode != NULL && opcode[0] != '#')
 		{
