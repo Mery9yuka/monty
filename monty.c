@@ -89,4 +89,8 @@ void executor_instructs(char *opcode, stack_t **stack,
 		stack_f(stack);
 		exit(EXIT_FAILURE);
 	}
+	free(line);
+	fclose(file);
+	stack_f(stack);
+	exit(EXIT_FAILURE);
 }
