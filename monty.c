@@ -87,6 +87,8 @@ void executor_instructs(char *opcode, stack_t **stack,
 		pstri_elemt(stack, line_number);
 	else if (strcmp(opcode, "rotl") == 0)
 		rotli_elemt(stack, line_number);
+	else if (strcmp(opcode, "rotl") == 0)
+		rotri_elemt(stack, line_number);
 	else
 	{
 		fprintf(stderr, "L%d: unknown instruction %s\n", line_number, opcode);
