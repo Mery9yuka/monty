@@ -58,6 +58,4 @@ void str_trim(char *s);
 char *cstm_basename(char *path_file);
 void pchari_elemt(stack_t **stack, unsigned int line_number);
 void pstri_elemt(stack_t **stack, unsigned int line_number);
-void rotli_elemt(stack_t **stack, unsigned int line_number);
-
 #endif /* MONTY_H */
